@@ -76,8 +76,8 @@ export default async function Home() {
       year: 1993,
     },
   ];
-  const allCars = await fetchCars();
-  // const allCars = [...fakeData];
+  // const allCars = await fetchCars();
+  const allCars = [...fakeData];
 
   const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars;
 
